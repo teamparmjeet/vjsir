@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Inner-store-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark">
+    <div class="d-flex">
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <a href="index.html"><img src="image/shipp-logo.webp" alt="logo" class="img-fluid"></a>
+                    </span>
+                </div>
+                <div class="vihu">
+                    <i class='bx bx-menu toggle'></i>
+                </div>
+            </header>
+
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links list-unstyled">
+                        <li class="nav-link">
+                            <a href="index.html">
+                                <i class='bx bx-home icon'></i>
+                                <span class="text nav-text">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="orders.html">
+                                <i class='bx bx-cart icon'></i>
+                                <span class="text nav-text">
+                                    Orders
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="shipment.html">
+                                <i class='bx bxs-truck icon'></i>
+                                <span class="text nav-text">
+                                    Shipments
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="tracking.html">
+                                <i class='bx bx-location-plus icon'></i>
+                                <span class="text nav-text">
+                                    Tracking
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="customers.html">
+                                <i class='bx bx-user-check icon'></i>
+                                <span class="text nav-text">
+                                    Customers
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="returns.html">
+                                <i class='bx bx-rotate-left icon'></i>
+                                <span class="text nav-text">
+                                    Returns
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="setting.html">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="text nav-text">
+                                    Settings
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="support.html">
+                                <i class='bx bx-support icon'></i>
+                                <span class="text nav-text">
+                                    Support
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="#">
+                            <i class='bx bx-log-out-circle icon'></i>
+                            <span class="text nav-text"> Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <!-- side menu bar end----------------------------------- -->
+        <!-- top header start--------------------------- -->
+        <section class="home">
+            <div class="topbar  py-2">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between">
+                        <div class="">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                        class='bx bx-search-alt-2'></i></span>
+                                <input type="text" class="form-control fs-12" placeholder="Search...."
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav mb-0 d-flex align-items-center flex-row">
+                            <li class="nav-item d-flex align-items-center me-4 arabic">
+                                <a href="" class=" d-flex align-items-center text-decoration-none"> العربية</a>
+
+                            </li>
+                            <li class="nav-item d-flex align-items-center me-4 flag-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
+                                    <path
+                                        d="M1.638,5.846H30.362c-.711-1.108-1.947-1.846-3.362-1.846H5c-1.414,0-2.65,.738-3.362,1.846Z"
+                                        fill="#a62842"></path>
+                                    <path
+                                        d="M2.03,7.692c-.008,.103-.03,.202-.03,.308v1.539H31v-1.539c0-.105-.022-.204-.03-.308H2.03Z"
+                                        fill="#a62842"></path>
+                                    <path fill="#a62842" d="M2 11.385H31V13.231H2z"></path>
+                                    <path fill="#a62842" d="M2 15.077H31V16.923000000000002H2z"></path>
+                                    <path fill="#a62842" d="M1 18.769H31V20.615H1z"></path>
+                                    <path
+                                        d="M1,24c0,.105,.023,.204,.031,.308H30.969c.008-.103,.031-.202,.031-.308v-1.539H1v1.539Z"
+                                        fill="#a62842"></path>
+                                    <path
+                                        d="M30.362,26.154H1.638c.711,1.108,1.947,1.846,3.362,1.846H27c1.414,0,2.65-.738,3.362-1.846Z"
+                                        fill="#a62842"></path>
+                                    <path d="M5,4h11v12.923H1V8c0-2.208,1.792-4,4-4Z" fill="#102d5e"></path>
+                                    <path
+                                        d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                        opacity=".15"></path>
+                                    <path
+                                        d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                        fill="#fff" opacity=".2"></path>
+                                    <path fill="#fff"
+                                        d="M4.601 7.463L5.193 7.033 4.462 7.033 4.236 6.338 4.01 7.033 3.279 7.033 3.87 7.463 3.644 8.158 4.236 7.729 4.827 8.158 4.601 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 7.463L8.172 7.033 7.441 7.033 7.215 6.338 6.989 7.033 6.258 7.033 6.849 7.463 6.623 8.158 7.215 7.729 7.806 8.158 7.58 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 7.463L11.151 7.033 10.42 7.033 10.194 6.338 9.968 7.033 9.237 7.033 9.828 7.463 9.603 8.158 10.194 7.729 10.785 8.158 10.56 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M6.066 9.283L6.658 8.854 5.927 8.854 5.701 8.158 5.475 8.854 4.744 8.854 5.335 9.283 5.109 9.979 5.701 9.549 6.292 9.979 6.066 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M9.046 9.283L9.637 8.854 8.906 8.854 8.68 8.158 8.454 8.854 7.723 8.854 8.314 9.283 8.089 9.979 8.68 9.549 9.271 9.979 9.046 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M12.025 9.283L12.616 8.854 11.885 8.854 11.659 8.158 11.433 8.854 10.702 8.854 11.294 9.283 11.068 9.979 11.659 9.549 12.251 9.979 12.025 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M6.066 12.924L6.658 12.494 5.927 12.494 5.701 11.799 5.475 12.494 4.744 12.494 5.335 12.924 5.109 13.619 5.701 13.19 6.292 13.619 6.066 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M9.046 12.924L9.637 12.494 8.906 12.494 8.68 11.799 8.454 12.494 7.723 12.494 8.314 12.924 8.089 13.619 8.68 13.19 9.271 13.619 9.046 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M12.025 12.924L12.616 12.494 11.885 12.494 11.659 11.799 11.433 12.494 10.702 12.494 11.294 12.924 11.068 13.619 11.659 13.19 12.251 13.619 12.025 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 7.463L14.13 7.033 13.399 7.033 13.173 6.338 12.947 7.033 12.216 7.033 12.808 7.463 12.582 8.158 13.173 7.729 13.765 8.158 13.539 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M4.601 11.104L5.193 10.674 4.462 10.674 4.236 9.979 4.01 10.674 3.279 10.674 3.87 11.104 3.644 11.799 4.236 11.369 4.827 11.799 4.601 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 11.104L8.172 10.674 7.441 10.674 7.215 9.979 6.989 10.674 6.258 10.674 6.849 11.104 6.623 11.799 7.215 11.369 7.806 11.799 7.58 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 11.104L11.151 10.674 10.42 10.674 10.194 9.979 9.968 10.674 9.237 10.674 9.828 11.104 9.603 11.799 10.194 11.369 10.785 11.799 10.56 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 11.104L14.13 10.674 13.399 10.674 13.173 9.979 12.947 10.674 12.216 10.674 12.808 11.104 12.582 11.799 13.173 11.369 13.765 11.799 13.539 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M4.601 14.744L5.193 14.315 4.462 14.315 4.236 13.619 4.01 14.315 3.279 14.315 3.87 14.744 3.644 15.44 4.236 15.01 4.827 15.44 4.601 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 14.744L8.172 14.315 7.441 14.315 7.215 13.619 6.989 14.315 6.258 14.315 6.849 14.744 6.623 15.44 7.215 15.01 7.806 15.44 7.58 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 14.744L11.151 14.315 10.42 14.315 10.194 13.619 9.968 14.315 9.237 14.315 9.828 14.744 9.603 15.44 10.194 15.01 10.785 15.44 10.56 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z">
+                                    </path>
+                                </svg>
+                            </li>
+                            <li class="nav-item d-flex align-items-center me-4 gift position-relative">
+                                <a href="" class="text-white d-flex align-items-center text-decoration-none"><i
+                                        class='bx bx-gift'></i> </a>
+                                <span class="gift-span">Gifts</span>
+                            </li>
+
+
+                            <li class="nav-item d-flex align-items-center me-4 bell-icon">
+                                <a href="" class="text-white d-flex align-items-center text-decoration-none"><i
+                                        class='bx bx-bell'></i></a>
+                                <span class="span">0</span>
+                            </li>
+                            <li class="nav-item  d-flex align-items-center">
+                                <a href="" class="text-white name d-flex align-items-center text-decoration-none"><i
+                                        class='bx bx-user me-1'></i> <span class="fs-12">Vihu</span></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- top header end-------------------------------------- -->
+            <section>
+                <div class="container-fluid">
+                    <div class="orders order-list d-flex align-items-center justify-content-between ">
+                        <div class="brand-heding">
+                            <h2 class="mb-0">Salla Store</h2>
+
+                        </div>
+                        <div class="inner-btn">
+                            <a href=""><span><i class='bx bx-arrow-back'></i></span> Back</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="orders ">
+                        <div class="row align-items-center">
+                            <div class="col-7 d-flex align-items-center ">
+                                <div class="order-list direct-box ">
+                                    <h5 class="mb-0 border-bottom pb-lg-3 pb-2">1. Direct Connect</h5>
+                                    <div class="direct-box-btn ">
+                                        <div class="inner-list pt-2">
+                                            <h6>To connect your store to your Torod account please follow the below
+                                                instructions:</h6>
+                                        </div>
+                                        <p class="py-lg-4 py-md-3 py-2">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Rem vel et at,
+                                            repudiandae consectetur aspernatur, adipisci illo ullam fugit laudantium est
+                                            quisquam nulla. Neque incidunt, dolorum magni amet voluptas rem expedita
+                                            unde ea facere commodi sequi quod veniam iusto assumenda dolor maxime sed
+                                            temporibus nostrum, aliquam vel accusantium soluta corrupti.</p>
+                                        <p class="pb-lg-5 pb-md-3 pb-2">Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Rem vel et at,
+                                            repudiandae consectetur aspernatur, adipisci illo ullam fugit laudantium est
+                                            quisquam nulla. Neque incidunt, dolorum magni amet voluptas rem expedita
+                                            unde ea facere commodi sequi quod veniam iusto assumenda dolor maxime sed
+                                            temporibus nostrum, aliquam vel accusantium soluta corrupti.</p>
+                                        <a href="">Connect Salla Store</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="order-list">
+                                    <div
+                                        class="inner-salla d-flex align-items-center justify-content-between border-bottom pb-2">
+                                        <h5>salla</h5>
+                                        <img src="image/vihu-one.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div>
+                                        <div class="inner-list">
+                                            <h6>To connect your store to your Torod account please follow the below
+                                                instructions:</h6>
+                                            <ol>
+                                                <li>From the main screen go to <span> Settings.</span>
+                                                </li>
+                                                <li>Find the e-commerce platform you’re using and click on
+                                                    <span>Connect.</span>
+                                                </li>
+                                                <li>On the next screen, click on Connect Salla Store , to complete the
+                                                    authentication process.</li>
+                                                <li>After clicking <span>Connect Salla Store </span> you’ll be directed
+                                                    to Salla
+                                                    Website. Log in using your store’s log-in information.</li>
+                                                <li>After logging in, review the permissions then click <span> Permit
+                                                        Grant.</span>
+                                                </li>
+                                            </ol>
+                                            <p class="mb-0">Merchants can connect as many stores as they want and manage
+                                                all of them from one single screen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-3">
+                <div class="container-fluid">
+                    <div class="orders ">
+                        <div class="row align-items-center">
+                            <div class="col-7 d-flex align-items-center ">
+                                <div class="order-list direct-box ">
+                                    <h5 class="mb-0 border-bottom pb-lg-3 pb-2">2. Connect using Zapier</h5>
+                                    <h6 class="workflows-heading">Your workflows</h6>
+                                    <div class="domain-box p-lg-5 p-2 p-md-3">
+                                        <div
+                                            class="domain-btn d-flex align-items-center justify-content-center flex-column">
+                                            <h6><span><img src="image/danger.png" alt="" class="img-fluid"></span>Domain
+                                                blocked</h6>
+                                            <p>For security reasons, all domains are blocked by default. Developers must
+                                                add this domain to span embed Zapier within this page. Under the
+                                                <span>Embed </span> section, go to <span>Settings -> Embedding
+                                                    Domains.</span>
+                                            </p>
+                                            <p class="light-text">If you are a Zapier user—don't worry, you can <span><a
+                                                        href="" class="zapier-a">go to Zapier</a></span> to continue.
+                                            </p>
+                                            <a href="" class="domain-end-btn">Add Domains</a>
+                                        </div>
+                                    </div>
+                                    <div class="direct-box">
+                                        <h6 class="workflows-heading">Your workflows</h6>
+                                        <div class="salla-orderadd domain-box  py-lg-3 p-2">
+                                            <div class="row justify-content-between align-items-center">
+                                                <div class="col-8 d-flex align-items-center justify-content-between">
+                                                    <div class="salla-tord-icons">
+                                                      <img src="image/salla-icon1.avif" alt="" class="img-fluid">
+                                                      <img src="image/torod-icon.avif" alt="" class="img-fluid ">
+                                                    </div>
+                                                    <div>
+                                                        <h6>Add new Salla orders to Torod</h6>
+                                                        <div class="d-flex">
+                                                            <p>Salla</p>
+                                                            <span>+</span>
+                                                            <p>Torod</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center justify-content-end">
+                                                    <a href="" class="domain-end-btn">Add Domains</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-5">
+                                <div class="order-list">
+                                    <div class="Zapier d-flex align-items-center justify-content-center flex-column">
+                                        <img src="image/zipper.png" alt="" class="img-fluid">
+                                        <h6>Zapier</h6>
+                                    </div>
+                                    <div class="inner-list">
+                                        <h6>To connect your store to your Torod account please follow the below
+                                            instructions:</h6>
+                                        <ol>
+                                            <li>From the main screen go to <span> Settings.</span>
+                                            </li>
+                                            <li>Find the e-commerce platform you’re using and click on
+                                                <span>Connect.</span>
+                                            </li>
+                                            <li>On the next screen, click on Connect Salla Store , to complete the
+                                                authentication process.</li>
+                                            <li>After clicking <span>Connect Salla Store </span> you’ll be directed
+                                                to Salla
+                                                Website. Log in using your store’s log-in information.</li>
+                                            <li>After logging in, review the permissions then click <span> Permit
+                                                    Grant.</span>
+                                            </li>
+                                        </ol>
+                                        <p class="mb-0">Merchants can connect as many stores as they want and manage
+                                            all of them from one single screen.</p>
+                                    </div>
+
+
+
+
+
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <!-- footer section------------- -->
+            <footer>
+                <div class=" footer-bg d-flex align-items-center justify-content-center">
+                    <p class="mb-0">© 2024 Torod. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.owl-vihu').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

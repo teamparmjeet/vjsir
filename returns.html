@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Returns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark">
+    <div class="d-flex">
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <a href="index.html"><img src="image/shipp-logo.webp" alt="logo" class="img-fluid"></a>
+                    </span>
+                </div>
+                <div class="vihu">
+                    <i class='bx bx-menu toggle'></i>
+                </div>
+            </header>
+
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links list-unstyled">
+                        <li class="nav-link">
+                            <a href="index.html">
+                                <i class='bx bx-home icon'></i>
+                                <span class="text nav-text">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="orders.html">
+                                <i class='bx bx-cart icon'></i>
+                                <span class="text nav-text">
+                                    Orders
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="shipment.html">
+                                <i class='bx bxs-truck icon'></i>
+                                <span class="text nav-text">
+                                    Shipments
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="tracking.html">
+                                <i class='bx bx-location-plus icon'></i>
+                                <span class="text nav-text">
+                                    Tracking
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="customers.html">
+                                <i class='bx bx-user-check icon'></i>
+                                <span class="text nav-text">
+                                    Customers
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="returns.html">
+                                <i class='bx bx-rotate-left icon'></i>
+                                <span class="text nav-text">
+                                    Returns
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="setting.html">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="text nav-text">
+                                    Settings
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="support.html">
+                                <i class='bx bx-support icon'></i>
+                                <span class="text nav-text">
+                                    Support
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="#">
+                            <i class='bx bx-log-out-circle icon'></i>
+                            <span class="text nav-text"> Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <!-- side menu bar end----------------------------------- -->
+        <!-- top header start--------------------------- -->
+        <section class="home">
+            <div class="topbar  py-2">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between">
+                        <div class="">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                        class='bx bx-search-alt-2'></i></span>
+                                <input type="text" class="form-control fs-12" placeholder="Search...."
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav mb-0 d-flex align-items-center flex-row">
+                            <li class="nav-item  d-lg-block d-none text-center me-4 arabic">
+                                <a href="" class=" d-flex align-items-center text-decoration-none"> العربية</a>
+
+                            </li>
+                            <li class="nav-item  d-lg-block d-none text-center me-4 flag-head">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
+                                    <path
+                                        d="M1.638,5.846H30.362c-.711-1.108-1.947-1.846-3.362-1.846H5c-1.414,0-2.65,.738-3.362,1.846Z"
+                                        fill="#a62842"></path>
+                                    <path
+                                        d="M2.03,7.692c-.008,.103-.03,.202-.03,.308v1.539H31v-1.539c0-.105-.022-.204-.03-.308H2.03Z"
+                                        fill="#a62842"></path>
+                                    <path fill="#a62842" d="M2 11.385H31V13.231H2z"></path>
+                                    <path fill="#a62842" d="M2 15.077H31V16.923000000000002H2z"></path>
+                                    <path fill="#a62842" d="M1 18.769H31V20.615H1z"></path>
+                                    <path
+                                        d="M1,24c0,.105,.023,.204,.031,.308H30.969c.008-.103,.031-.202,.031-.308v-1.539H1v1.539Z"
+                                        fill="#a62842"></path>
+                                    <path
+                                        d="M30.362,26.154H1.638c.711,1.108,1.947,1.846,3.362,1.846H27c1.414,0,2.65-.738,3.362-1.846Z"
+                                        fill="#a62842"></path>
+                                    <path d="M5,4h11v12.923H1V8c0-2.208,1.792-4,4-4Z" fill="#102d5e"></path>
+                                    <path
+                                        d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                        opacity=".15"></path>
+                                    <path
+                                        d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                        fill="#fff" opacity=".2"></path>
+                                    <path fill="#fff"
+                                        d="M4.601 7.463L5.193 7.033 4.462 7.033 4.236 6.338 4.01 7.033 3.279 7.033 3.87 7.463 3.644 8.158 4.236 7.729 4.827 8.158 4.601 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 7.463L8.172 7.033 7.441 7.033 7.215 6.338 6.989 7.033 6.258 7.033 6.849 7.463 6.623 8.158 7.215 7.729 7.806 8.158 7.58 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 7.463L11.151 7.033 10.42 7.033 10.194 6.338 9.968 7.033 9.237 7.033 9.828 7.463 9.603 8.158 10.194 7.729 10.785 8.158 10.56 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M6.066 9.283L6.658 8.854 5.927 8.854 5.701 8.158 5.475 8.854 4.744 8.854 5.335 9.283 5.109 9.979 5.701 9.549 6.292 9.979 6.066 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M9.046 9.283L9.637 8.854 8.906 8.854 8.68 8.158 8.454 8.854 7.723 8.854 8.314 9.283 8.089 9.979 8.68 9.549 9.271 9.979 9.046 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M12.025 9.283L12.616 8.854 11.885 8.854 11.659 8.158 11.433 8.854 10.702 8.854 11.294 9.283 11.068 9.979 11.659 9.549 12.251 9.979 12.025 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M6.066 12.924L6.658 12.494 5.927 12.494 5.701 11.799 5.475 12.494 4.744 12.494 5.335 12.924 5.109 13.619 5.701 13.19 6.292 13.619 6.066 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M9.046 12.924L9.637 12.494 8.906 12.494 8.68 11.799 8.454 12.494 7.723 12.494 8.314 12.924 8.089 13.619 8.68 13.19 9.271 13.619 9.046 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M12.025 12.924L12.616 12.494 11.885 12.494 11.659 11.799 11.433 12.494 10.702 12.494 11.294 12.924 11.068 13.619 11.659 13.19 12.251 13.619 12.025 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 7.463L14.13 7.033 13.399 7.033 13.173 6.338 12.947 7.033 12.216 7.033 12.808 7.463 12.582 8.158 13.173 7.729 13.765 8.158 13.539 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M4.601 11.104L5.193 10.674 4.462 10.674 4.236 9.979 4.01 10.674 3.279 10.674 3.87 11.104 3.644 11.799 4.236 11.369 4.827 11.799 4.601 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 11.104L8.172 10.674 7.441 10.674 7.215 9.979 6.989 10.674 6.258 10.674 6.849 11.104 6.623 11.799 7.215 11.369 7.806 11.799 7.58 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 11.104L11.151 10.674 10.42 10.674 10.194 9.979 9.968 10.674 9.237 10.674 9.828 11.104 9.603 11.799 10.194 11.369 10.785 11.799 10.56 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 11.104L14.13 10.674 13.399 10.674 13.173 9.979 12.947 10.674 12.216 10.674 12.808 11.104 12.582 11.799 13.173 11.369 13.765 11.799 13.539 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M4.601 14.744L5.193 14.315 4.462 14.315 4.236 13.619 4.01 14.315 3.279 14.315 3.87 14.744 3.644 15.44 4.236 15.01 4.827 15.44 4.601 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 14.744L8.172 14.315 7.441 14.315 7.215 13.619 6.989 14.315 6.258 14.315 6.849 14.744 6.623 15.44 7.215 15.01 7.806 15.44 7.58 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 14.744L11.151 14.315 10.42 14.315 10.194 13.619 9.968 14.315 9.237 14.315 9.828 14.744 9.603 15.44 10.194 15.01 10.785 15.44 10.56 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z">
+                                    </path>
+                                </svg>
+
+                            </li>
+                            <li class="nav-item  text-center me-sm-4 me-2 gift position-relative">
+                                <a href="" class="text-white d-flex align-items-center text-decoration-none"><i
+                                        class='bx bx-gift'></i> </a>
+                                <span class="gift-span">Gifts</span>
+                            </li>
+                            <li class="nav-item  text-center me-sm-4 me-2 bell-icon">
+                                <a href="" class="text-white d-flex align-items-center text-decoration-none"><i
+                                        class='bx bx-bell'></i></a>
+                                <span class="span">0</span>
+                            </li>
+                            <li class="nav-item   d-flex align-items-center">
+                                <a href="" class="text-white name d-flex align-items-center text-decoration-none"><i
+                                        class='bx bx-user me-1'></i> <span class="fs-12">Vihu</span></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- top header end-------------------------------------- -->
+            <section>
+
+
+                <div class="container-fluid">
+                    <div class="row orders align-items-center justify-content-between">
+                        <div class="col-6 order-heading">
+                            <div class="order-heading d-flex align-items-center ">
+                                <img src="image/return-on-investment.png" alt="" class="img-fluid">
+                                <h6 class="mb-0">Returns</h6>
+                            </div>
+
+                        </div>
+                        <div class="col-6 customers-top-btn d-flex align-items-center justify-content-end">
+                            <button class="user-btn"><span><i class='bx bx-plus pe-1'></i></span> Add return</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="orders order-list-nopadding px-1 px-sm-4">
+                    <div class="tabs-button ">
+                        <div class="row align-items-center justify-content-between border-bottom pb-3">
+                            <div class="col-md-4 d-flex align-items-center ">
+                                <div class="faq d-flex align-items-center">
+                                    <i class='bx bx-conversation'></i>
+                                    <p>FAQs</p>
+                                </div>
+                                <div class="faq d-flex align-items-center ps-4">
+                                    <i class='bx bxs-error-circle'></i>
+                                    <p class="">API Help Doc</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8    faq-search ">
+                                <div class="search-shipment w-full">
+                                    <div class="input-group ">
+                                        <div class="input-group-append ">
+                                            <span class="input-group-text " id="basic-addon2"><i
+                                                    class="bx bx-search"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control"
+                                            placeholder="Search Via order Id, product SKU, AWB"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <ul class="nav nav-pills my-3 gap-2" id="pills-tab" role="tablist">
+                            <li class="nav-item w-full " role="presentation">
+                                <button class="nav-link active w-full" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Return Request</button>
+                            </li>
+                            <li class="nav-item w-full " role="presentation">
+                                <button class="nav-link ms-sm-3 w-full" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Return Portal</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="orders order-list">
+                                    <div class="return-request">
+                                        <h2 class="mb-0 border-bottom pb-2">Return Request</h2>
+                                        <div class="row  position-relative return-head-row">
+                                            <div class="col-lg-5 d-flex align-items-center justify-content-end px-0">
+                                                <div class="incoming-return ">
+                                                    <div class="incoming-return-content d-flex align-items-center">
+                                                        <img src="image/passive-income.png" alt="" class="img-fluid">
+                                                        <h6 class="mb-0">Incoming return</h6>
+                                                    </div>
+                                                    <div
+                                                        class="incoming-return-degit d-flex align-items-center justify-content-between py-3">
+                                                        <h6 class="mb-0">$ 2,992</h6>
+                                                        <p class="mb-0"><span><i class='bx bx-trending-up'></i></span>
+                                                            5%</p>
+                                                    </div>
+                                                    <div class="incoming-return-content d-flex align-items-center pb-2">
+                                                        <p class="mb-0">Compared to last month</p>
+                                                    </div>
+                                                    <div class="incoming-return-button d-flex align-items-end ">
+                                                        <button
+                                                            class="d-flex align-items-center justify-content-between">View
+                                                            Details <span><i
+                                                                    class='bx bx-right-arrow-alt'></i></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 d-none d-xl-block border-add position-relative">
+                                                <i class='bx bx-check '></i>
+                                                <i class='bx bx-check vvihu'></i>
+                                            </div>
+                                            <div class="col-lg-5 mt-2 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-end p-2 px-0 incoming-return return-form position-relative ">
+                                                <div class="">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Request ID</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Date</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Customer Details</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Return Items</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Return Address</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Action</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position-absolute d-none d-xl-block absolute">
+                                                    <i class='bx bx-chevrons-left'></i>
+                                                    <i class='bx bx-chevrons-left'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row position-relative return-head-row">
+                                            <div class="col-lg-5 order-3 order-lg-1 mt-2 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-end p-2 px-0 incoming-return return-form position-relative ">
+                                                <div class="">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Request ID</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Date</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Customer Details</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Return Items</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Return Address</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Action</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="col-1 order-2 d-none d-xl-block  border-add position-relative">
+                                                <i class='bx bx-check '></i>
+                                            </div>
+                                            <div class="col-lg-5 order-1 order-lg-3 d-flex align-items-center justify-content-end px-0">
+                                                <div class="incoming-return">
+                                                    <div class="incoming-return-content d-flex align-items-center">
+                                                        <img src="image/conversation.png" alt="" class="img-fluid">
+                                                        <h6 class="mb-0">Approved </h6>
+                                                    </div>
+                                                    <div
+                                                        class="incoming-return-degit d-flex align-items-center justify-content-between py-3">
+                                                        <h6 class="mb-0">2,992</h6>
+                                                        <p class="mb-0"><span><i class='bx bx-trending-up'></i></span>
+                                                            5%</p>
+                                                    </div>
+                                                    <div class="incoming-return-content d-flex align-items-center pb-2">
+                                                        <p class="mb-0">Compared to last month</p>
+                                                    </div>
+                                                    <div class="incoming-return-button d-flex align-items-end ">
+                                                        <button
+                                                            class="d-flex align-items-center justify-content-between">View
+                                                            Details <span><i
+                                                                    class='bx bx-right-arrow-alt'></i></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                       <div class="row position-relative return-head-row">
+                                            <div class="col-lg-5 d-flex align-items-center justify-content-end px-0">
+                                                <div class="incoming-return">
+                                                    <div class="incoming-return-content d-flex align-items-center">
+                                                        <img src="image/rejection.png" alt="" class="img-fluid">
+                                                        <h6 class="mb-0">Rejected </h6>
+                                                    </div>
+                                                    <div
+                                                        class="incoming-return-degit d-flex align-items-center justify-content-between py-3">
+                                                        <h6 class="mb-0">$ 2,992</h6>
+                                                        <p class="mb-0"><span><i class='bx bx-trending-up'></i></span>
+                                                            5%</p>
+                                                    </div>
+                                                    <div class="incoming-return-content d-flex align-items-center pb-2">
+                                                        <p class="mb-0">Compared to last month</p>
+                                                    </div>
+                                                    <div class="incoming-return-button d-flex align-items-end ">
+                                                        <button
+                                                            class="d-flex align-items-center justify-content-between">View
+                                                            Details <span><i
+                                                                    class='bx bx-right-arrow-alt'></i></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 d-none d-xl-block  border-add position-relative">
+                                                <i class='bx bx-check '></i>
+                                            </div>
+                                            <div class="col-lg-5 order-3 order-lg-1 mt-2 mt-lg-0 d-flex align-items-center justify-content-center justify-content-lg-end p-2 px-0 incoming-return return-form position-relative ">
+                                                <div class="">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Request ID</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Date</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Customer Details</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Return Items</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Return Address</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 ">
+                                                            <div class="return-input d-flex flex-column">
+                                                                <label for="">Action</label>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position-absolute order-2 d-none d-xl-block absolute">
+                                                    <i class='bx bx-chevrons-left'></i>
+                                                    <i class='bx bx-chevrons-left'></i>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                  <div class="orders ">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    <span class="me-2">1</span>
+                                                    Activate return
+                                                    portal
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body d-flex align-items-center justify-content-end">
+                                                    <div class="form-check form-switch d-flex align-items-center ">
+                                                        <label class="form-check-label" for="flexSwitchCheckDefault">Activate return
+                                                            portal</label>
+                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+            
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span class="me-2">2</span>
+                                                    Policy Configuration
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body ">
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2
+                                                    ">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0">Return Address</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                You don't have a return address configured yet. <span>Create</span>
+                                                                additional
+                                                                return addresses before activating your <span>return portal.</span>
+                                                            </p>
+                                                            <div class="box_selbox">
+                                                                <select class="select_address" name="merchant_address"
+                                                                    id="merchant_address">
+                                                                    <option value="" selected="" disabled="">
+                                                                        Select address </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0">Email Notification</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">Select an email address to which you will receive a
+                                                                <span> notification</span>
+                                                                when your customer initiates a return
+                                                            </p>
+                                                            <div class="mail">
+                                                                <input type="email" name="" id="" placeholder="Email Address">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0"> Return Policy</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                An optional link to your own site where the return procedure is
+                                                                further detailed.
+                                                            </p>
+                                                            <div class="mail">
+                                                                <input type="text" name="" id="" placeholder="......">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0"> Maximum number of days for return</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                The number of days within which the user is allowed to initiate a
+                                                                return, after parcel was delivered
+                                                            </p>
+                                                            <div class="mail">
+                                                                <input type="text" name="" id="" placeholder="......">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0">Return Fee</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                Any extra fees will be paid by customer
+                                                            </p>
+                                                            <div class="mail">
+                                                                <input type="text" name="" id="" placeholder="......">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingthree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsethree" aria-expanded="false"
+                                                    aria-controls="collapsethree">
+                                                    <span class="me-2">3</span>
+                                                    Return Preferences
+                                                </button>
+                                            </h2>
+                                            <div id="collapsethree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body ">
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0">Return Reasons</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                Return reasons which your customer will be able to
+                                                                choose
+                                                            </p>
+                                                            <div class="cheack-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckDefault">
+                                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                                        Did not meet expectations
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Arrived too late
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckDefault">
+                                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                                        Does not suit me
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Incorrect product ordered
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckDefault">
+                                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                                        Incorrect product received
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Looks different than expected
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        damaged
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Not match description on website
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Missing parts
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Other
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0">Return to</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                Available channel for the return
+                                                            </p>
+                                                            <div class="cheack-box">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckDefault">
+                                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                                        Return to our Branch
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Ship via pre-paid return
+                                                                    </label>
+                                                                </div>
+            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between border py-2 my-2">
+                                                        <div class="col-sm-5">
+                                                            <h6 class="mb-0"> Refund Method</h6>
+                                                        </div>
+                                                        <div class="col-sm-7">
+                                                            <p class="mb-0">
+                                                                Available return method
+                                                            </p>
+                                                            <div class="cheack-box ">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckDefault">
+                                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                                        Store credit
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckDefault">
+                                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                                        Refund to original payment method
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="flexCheckChecked" checked>
+                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                        Exchange product
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingfour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsefour" aria-expanded="false"
+                                                    aria-controls="collapsefour">
+                                                    <span class="me-2">4</span>
+                                                    Communication Preferences
+                                                </button>
+                                            </h2>
+                                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="border p-3">
+                                                        <div class="row">
+                                                            <div class="col-12 communication-content">
+                                                                <p class="mb-0"> <span>A. No Orders message</span> </p>
+                                                                <p class="p">What is the message that you would like to display to
+                                                                    your
+                                                                    customers in
+                                                                    case they don’t have any orders eligible for return?</p>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                                        Torod Default Message
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                                        Custom Message
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 communication-content mt-4 border-top pt-2">
+                                                                <p class="mb-0"> <span>B. Thank you Message</span> </p>
+                                                                <p class="p">What is the message that you would like to display to
+                                                                    your
+                                                                    customers in
+                                                                    case they don’t have any orders eligible for return?</p>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                                        Torod Default Message
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                                        Custom Message
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingfive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsefive" aria-expanded="false"
+                                                    aria-controls="collapsefive">
+                                                    <span class="me-2">5</span>
+                                                    Review Brand Design
+                                                </button>
+                                            </h2>
+                                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body ">
+                                                    <div class="border p-3">
+                                                        <div class="review-brand-box">
+                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                Torod Default Message
+                                                            </label>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="https://www.torod.co/en/return/order/gxjuQkb1"
+                                                                    aria-label="Recipient's username"
+                                                                    aria-describedby="basic-addon2">
+                                                                <div class="input-group-append">
+                                                                    <span class="input-group-text" id="basic-addon2"><i
+                                                                            class='bx bx-windows'></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row my-3">
+                                                            <div class="col-sm-6">
+                                                                <div class="review-brand-btn-one">
+                                                                    <p class="review-p mb-0">Preview return page</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div
+                                                                    class="review-brand-btn-one d-flex align-items-center justify-content-end">
+                                                                    <p class="mb-0">Change page logo & colors from :</p>
+                                                                    <p class="review-p ms-4 mb-0">Complany / Brand</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingsix">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                                    <span class="me-2">6</span>
+                                                    Configure URL Embed Code
+                                                </button>
+                                            </h2>
+                                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="row align-items-center justify-content-between">
+                                                        <div class="col-6">
+                                                            <div class="code-content">
+                                                                <select class="select_address" name="merchant_address"
+                                                                    id="merchant_address">
+                                                                    <option value="" selected="" disabled="">
+                                                                        Select address </option>
+                                                                    <option value="" selected="" disabled="">
+                                                                        En </option>
+                                                                    <option value="" selected="" disabled="">
+                                                                        An </option>
+                                                                </select>
+                                                                <div class="code-input">
+                                                                    <input type="text" name="" id="" placeholder="......" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 code-input">
+                                                            <div class="form-group">
+                                                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                    rows="1"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="submit-form-btn">
+                                                        <button class="d-flex align-items-center justify-content-center">
+                                                            Submit<span><i class='bx bx-import'></i></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <!-- <div class="return-faq mt-4">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Return Request</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Return Portal</a>
+                            </li>
+
+                        </ul>
+                    </div> -->
+                </div>
+            </section>
+
+          
+
+
+
+
+
+            <!-- footer section------------- -->
+            <footer>
+                <div class=" footer-bg d-flex align-items-center justify-content-center">
+                    <p class="mb-0">© 2024 Torod. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+    </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.owl-vihu').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
